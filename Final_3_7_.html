@@ -1,0 +1,261 @@
+
+
+<!doctype html>
+<html>
+   <head>
+    <title>Intro to Programming Notes</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="class1.css">
+   </head>
+<meta charset="utf-8">
+<body>
+<div class="lesson1">
+<h2>Lesson 1 -The Basics of Webpage Structure and HTML </h2>
+
+<h3>DataFlow</h3>
+
+<p>The following descibes how  data moves from the users desktop through the internet back: </p>
+  <ul>
+<li>The user opens the browser, a WEB page is displayed. All the text on the page is written in HTML.</li><br>
+<li>The user types a URL into a browser.</li><br>
+<li>The browser reads the URL and translates it into an HTTP request.</li><br>
+<li>If the computer has a working physical connection to the internet, the HTTP request will be forwarded<br> 
+to the "cloud".</li><br>
+<li>The request searches various sights looking for its URL destination.The destination will be located on<br>
+a server configured specifically to maintain data accessible from the users across the internet.</li><br>
+<li>The destination server is usually stored with other similar type servers in a closest or data center.</li><br>
+</ul>
+
+<h3>HTML</h3>
+
+<p>I've read that HTML was created to share documents across universities. This explain why the HTML or<br>
+ Hypertext Markup Language  "look"  seems so specific to a research paper! </p>
+<ul>  
+<li>HTML tags format headings, quotes, inline text, blocks text, subscripts, superscript are read and <br>
+interpreted WEB browsers.</li><br>
+<li>HTML supports creating links to other documents, or a link to somewhere else within the document, <br>
+such as a Table of Contents.</li><br>
+<li>HTML also supports links to images stored on a server on the WEB.</li><br>
+<li>HTML code comments begin with an exclaimation mark and end with an arrow. All data inbetween are part<br>
+ of the comments <br><br>
+<div class="box0"><pre>!-- and ends with --></pre> </div><br><br>
+</ul>
+
+
+
+<h3>TAGS and Elements</h3>
+<p>The following is a brief description( well, my interpretation of)  how tags and text become elements.</p>
+
+<ul>
+<li>The Syntax of HTML are TAGS embedded in the WEB page, next to the text. the Tags tell the browser how<br>
+ to configure the text</li><br>
+
+<li>The browser, using the Document Object Model, turns HTML tags and text into elements that form a nested<br>
+ tree-like structure.</li><br>
+
+<li>The element is created with opening and closing brackets, the content section between them, as in the <br>
+following:</li><br>
+
+
+<div class="box1">
+
+
+							<pre>&lt;em&gt;this is for emphasis&lt;em&gt;</pre> 
+
+</div>
+ 
+<br><br>
+
+<li>If the content section is empty and only the location of a source file is listed, the closing tag does<br>
+ not require the / slash. This type of closing tag is a <b>"void tag"</b>.  If a closing tag is not used, the browser<br>
+  may fall into an unsteady state.</li><br>
+</ul>
+<h3>Attributes</h3>
+<p>Attributes are properties and values of HTML Elements.</p>
+<ul>
+<li>Attributes are placed inside the element opening tag. An example of attribute usage</li><br>
+
+<div class="box2">
+			<pre>&lt;tag ATTR="value"&gt;contents&lt;/tag&gt; </pre>
+</div><br>
+
+<li>Elements can have multiple Attributes, for example the following URL contains the Attributes listed below<br>
+<br>
+<div class="box3">
+
+	<pre>href= www.reddit.com>derp<a></pre>
+</div><br>
+
+<li>The breakdown of the URL is the following:</li></br><br>
+
+<div class="box4">
+<pre>&lt;a&gt; - open anchor tag 
+&lt;href&gt; - attribute source name
+&lt;value&gt; - www.reddit.com
+&lt;derp&gt; - link to reddit.com
+&lt;a&gt; - closed anchor tag</pre>
+</div>
+
+
+<p>Other Attributes include:</p>
+<li><b>ID-Attribute</b>- allows you to identify item within a page. It can be used to find that item in a script. 
+</li><br>
+<li><b>Class-Attribute</b> -- many items on a page can be assigned a class, and styles and scripts can be applied to the class.</li><br>
+</ul>
+
+<br>
+<h3>Block elements and Inline elements </h3>
+ <p><b>Block element</b>- contain other blocks of data, line elements, and images and objects. Block elemets included
+ <ul>
+ <li><b>&lt;div&gt;</b> - allows you to create a division of the page; Wrap data in a container<br> and treat as a single unit</li><br>
+ <li><b>&lt;p&gt;</b> - a chunk of text that is defined as a paragraph.</li><br>
+ <li><b>&lt;h1 - h6&gt;</b> - Header tags in decending order size</li><br>
+ </ul>
+<p><b>Inline element</b> - is a span of text within a paragraph the designer wants to treat as a single element. Inline elements<br>
+ are containers only for inline elements.Tags which work with inline elements include,
+<ul>
+<li><b>&lt;span&gt;</b> - used to group inline elements</li><br>
+<li><b>&lt;em&gt;</b> - a font specific element for italics</l1><br>
+<li><b>&lt;b&gt;</b> - a font specific element for bold</li><br>
+</ul>
+</div>
+
+
+
+<div class="lesson2">
+<h2>Lesson 2: Creating a Structured Document with HTML</h2>
+<h3>HTML, TAGS and Trees and the structure of the WEB page</h3>
+
+HTML is a language which uses TAGS embedded in the WEB page, which communicate to the browser, information about the structure of the WEBpage.  The browser, utilizing the Document Object Model, turns HTML tags into elements that form a nested tree-like structure.<br>
+<ul>
+<li>An element is created from two tags and content:<br><br>
+<div class="box5"><pre>&lt;start tag&gt; content &lt;end tag>&gt;</pre></div> 
+<br>
+<li>The content is text or images, or video or whatever you want.</li><br>
+
+<li>Each tag is a name or type that defines the kind of element that will be created. The <b>&lt;p&gt;</b> tag identifies text blocked as a  paragraph.The <b>&lt;em&gt;</b> italicizes text.TAGS also provide information such as links to other documents or images.</li><br>
+</ul>
+
+
+<h3>Boxes</h3>
+<ul>
+<li>All elements on a WEB page are a box container; The elment might look like a circle, but its a rectangle containing the circle. The size and shape of the circle can be changed by adjusting the circles pixel number in the Style section of Developer Tools within the browser.  Looking at the WEB page as a series of boxes allows the the designer to easily move elements on the page and experiment with different layout options, and hopefully creating a design the customer wants.</li><br>
+</ul>
+
+<h3>Text Editors</h3> 
+<ul>
+<li>When writing code, programmers use special text editors (like Sublime Text for example). These editors make the programmer's life easier. For example, some text editors will automatically generate a closing HTML tag when you write an opening tag.</li>
+</ul>
+
+</div>
+
+<div class="lesson3">
+<h2>Lesson 3 -Adding CSS Style to HTML Structure</h2>
+<ul>
+<li>Cascading Style Sheets is a programming language used for controlling the visual style of the web page.
+CSS uses specific syntax and rules to control how elements such as the size of the font, background color and borders look on a page. To access and change the visual stye of the Webpage you need to access the Developer Tools within client browser. For example, you can say all the should have a specific color such as red or blue.</li>
+		
+</ul>
+
+
+<h3>The Selector</h3>
+<ul>
+<li>
+The Selector tells the browser where to apply the rule in the name value-pair.
+The syntax for a selector is configured as follows. The selector, curly bracies, the property name such as <b>"background color"</b>, and the value such as <b>"red"</b>.( hex RGB format). You can have multipe value pairs on each rule<br><br>
+<div class="box6">
+<pre> selector {
+     propertyname:value;
+}</pre>
+</div>
+<br>
+</li>
+<li>there are mulitple types of selectors, for example a class selector will find elements with a matching class attributes.<br><br>
+<div class="box7">
+<pre> .class {
+     propertyname:value;
+}</pre></ul>
+
+<h3>Cascade</h3>
+<ul>
+<li> There are three methods available to include CSS Styling in the webpage
+<p> 1. Write CSS in the Head section of the HTML document.<br><br>
+	2. Link your HTML document to a separate CSS file - the link tag is added in the head section.<br><br>
+	3. Write your style within the body of the HTML document- not a good idea, results in a lot of repeated code.</p><br> 
+<li>Styles applied to HTML elements can come form multile sources, multiple link tags can be inserted in the head element,linking multiples CSS pages. You can also use a combination of link tags and embedded styles.</li>
+</ul>
+
+
+<h3>Inheritance</h3>
+<ul>
+<li> Inheritance allows some CSS properties applied to an element to flow down to nested or child elements within the HTML DOM tree structure. A font-family property will, by default, be applied to a HTML element, and therefore all the elements nested within that body.Fortuneatly not all CSS values can be inherited, for example a border cannot be inherited; multiple nested borders would look pretty strange!</li><br>
+<li>Inheritable styles include font specfic items, such font-sizes, font-styles, etc. Also inheritable are List related styles, such as list-style type.</li><br>
+<li>Non-inheritable styles include, margins, padding and border</li></ul>
+
+
+<h3>Box Properties</h3>
+<p>Every element in HTML is a box of a certain number of pixels. and the designer can adjust the following 4 properties of this box with CSS.</p>
+<ul>
+<li><b>The content</b>- the center, the focus of the page.</li><br>
+<li><b>The Border</b>- most borders are not divisible by default, but the user can control the width, style and color of the border.</li><br>
+<li><b>The Padding</b>- the padding adds space between the border of a box and the content of a box. Padding pushes content in, away from the border.</li><br>
+<li><b>The Margin</b>- the space between the box any adjacent elements; the space between the boxes.</li><br>
+</ul>
+
+<h3>Box Sizing and Positioning</h3>
+<p> By default, size of each element is equal to the sum of the border, padding and content widths of the element.
+The designer can adjust each of these values, on 4 sides of the box. Because of this flexibility it can often be hard to get the size of a box just right. There are several techniques you can use to help deal with sizing issues among them are</p>
+<ul>
+<div class="box8">
+<pre> *{ 
+	box-sizing; border-box;
+	}
+</pre>
+</div>
+<br>
+<li> this makes the calculation element size include the border and padding so its easier to make layouts. You only need to set the width of the overall box.</l1><br><br>
+<li><b>pixels</b> - change the content page from a set pixel size to percent will effect the screen size. If set to a pixel size the screen image will remain static screen itself is changed.</li><br> 
+<li><b>Max Width</b> - of the box, it will resize when necessary, never larger than the Max.</li><br>
+<li><b>Flexible Box layout</b> -  provides an efficient way to layout a line and distribute space among items in a container. If you want several elements to be next to each other, you can change the dispaly attribute of the parent container to value "flex".</li><br>
+<li>To ensure that versions of the browsers understand new elements, you need to insert browser prefexs into the HTML code. 
+The prefixes for the most common browsers are listed below </li><br>
+ 		   	<pre>WEBKIT for Safari and Chrome
+MS for Microsoft Explorer
+MOS for Firefox </pre>
+
+</ul>
+
+<h3>Add an image</h3>
+<p>To add an image to a document, the image must be stored within easy access of the HTML file.<p>
+<ul>
+<li> The image name must not contain any spaces or accented characters.</li><br>
+<li> The image is added to the page with the tag and provide the source of the image.</l1><br><br>
+<div class="box9">
+	<pre> <div class = "image"> <.img src "images/app.png">/div></pre>
+</div> 
+<br>
+<li> Include the alt attribute which displays an explaination in the  browser cannot display the image.</li>
+</ul>
+
+<h3>Put it all together</h3>
+<p>You should develop a set of criteria for developing a web page.</p>
+<ul>
+<li>Layout- creat the text content</l1><br><br>
+<li>HTML Tag- create the the HTML stucture, Block and inline.</li><br>
+<li>CSS and Box position - Boxify the large elements and and define CSS items such as padding, margins.</li><br>
+<li>CSS and details- Adds smaller CSS details</li><br>
+<li>comments- In CSS, code comments begin with /* and end with */.</li><br>
+</ul>
+
+<h3>Verify HTML and CSS</h3>
+<p>To verify the accuracy of the HTML and CCS settings<p>
+<l2>
+<li>HTML - http://validator.w3.org/#validate_by_input</li><br>
+<li>CSS - http://jigsaw.w3.org/css-validator/#validate_by_input</li><br>
+</l2>
+</div>
+</body>
+
+
+
+
